@@ -1,0 +1,107 @@
+html, body, div, form, fieldset,h1, h2 {
+  padding:0;
+  margin:0;
+}
+
+body, input, button {
+  font:normal 1em/1.5 helvetica,sans-serif;
+}
+
+button {
+  cursor:pointer;
+}
+
+html, body {
+  height:100%;
+}
+
+body {
+  display:flex;
+  flex-direction:column;
+  background:white;
+  color:#248;
+}
+
+body > header,
+body > footer {
+  flex:0 0 auto;
+  padding:1em;
+  background:olive;
+  color:rgb(220, 235, 232);
+
+
+
+}
+
+main {
+  flex:1 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:1em;
+}
+
+#login {
+  flex:1 0 auto;
+  overflow:hidden;
+  width:100%;
+  max-width:20em;
+  background:#DEF;
+  border-radius:0.5em;
+  box-shadow:0.1em 0.25em 0.5em #0004;
+}
+
+#login h2 {
+  padding:0.4em 0.8em;
+  font-size:1.25em;
+  background:olive;
+  color:#FFF;
+}
+
+#login fieldset {
+  padding:1em;
+  border:none;
+}
+
+#login label {
+  display:block;
+  padding-bottom:1em;
+}
+
+#login input {
+  box-sizing:border-box;
+  float:left;
+  width:100%;
+  padding:0.25em 0.5em;
+  margin:0.25em 0 1em;
+  border:1px solid #5AF;
+  border-radius:0.25em;
+}
+
+#login > footer {
+  padding:0 1em;
+}
+
+#login > footer button {
+  float:right;
+  box-sizing:border-box;
+  padding:0.25em 1em;
+  margin-top:-0.25em;
+  background:olive;
+  border:1px solid #5AF;
+  border-radius:0.25em;
+  box-shadow:
+    inset 0 1em 1em #FFF8;
+  transition:background- 0.3s;
+}
+
+#login > footer button:focus,
+#login > footer button:hover {
+  background:olive;
+}
+
+#login p {
+  clear:both;
+  text-align:center;
+  padding:1em 0;
+}
